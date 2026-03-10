@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jahnavi Mishra | Portfolio</title>
+    <link rel="icon" type="image/png" href="./public/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons-CDN -->
+    <script
+      src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ─── NAVBAR ─── -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo">JM</a>
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="mailto:jahnavimishra23@gmail.com" class="nav-hire">Hire me</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ─── HERO ─── -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+
+        <div class="hero-hello">Hello, I am</div>
+        <h1 class="hero-title">
+          Jahnavi <br />
+          <span> Mishra</span>
+        </h1>
+
+        <p class="hero-sub">
+          <span id="heroRole"></span
+          ><span class="cursor" id="heroCursor"></span>
+        </p>
+
+        <p class="hero-desc">
+          I build fast, accessible, and beautifully crafted web experiences.
+          Currently leading web development at GDG SDSF.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+
+        <!-- <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-val" data-target="20">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-val" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-val" data-target="300">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Students Mentored</span>
+        </div>
+      </div> -->
+      </div>
+
+      <!-- subtle horizontal divider at bottom -->
+      <div class="hero-divider"></div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-eyebrow">About</div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 class="section-heading">A bit about me</h2>
+            <p>
+              I'm a third-year Integrated M.Tech student in Artificial
+              Intelligence and Data Science at DAVV, Indore, with a strong
+              interest in web development and machine learning.
+            </p>
+
+            <p>
+              I enjoy building modern, performant web applications and exploring
+              how data-driven and intelligent systems can be used to solve
+              real-world problems.
+            </p>
+
+            <p>
+              I'm always eager to learn new technologies, expand my skill set,
+              and contribute to meaningful projects in the tech community.
+            </p>
+            <div class="about-tags">
+              <span>Python</span>
+              <span>MySQL</span>
+              <span>Express.js</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Javascript</span>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="about-avatar">JM</div>
+            <div class="about-meta">
+              <div class="meta-row">
+                <i data-lucide="map-pin" class="meta-icon"></i>
+                <span>India · Remote Friendly</span>
+              </div>
+              <!-- <div class="meta-row">
+                <i data-lucide="briefcase" class="meta-icon"></i>
+                <span>GDG SDSF · Web Lead</span>
+              </div> -->
+              <!-- <div class="meta-row">
+                <i data-lucide="graduation-cap" class="meta-icon"></i>
+                <span>3+ Years Experience</span>
+              </div> -->
+              <div class="meta-row">
+                <i data-lucide="github" class="meta-icon"></i>
+                <a href="https://github.com/MissJahnavi" class="meta-link"
+                  >github.com/jahnavi</a
+                >
+              </div>
+              <div class="meta-row">
+                <i data-lucide="mail" class="meta-icon"></i>
+                <a href="jahnavimishra23@gmail.com" class="meta-link"
+                  >gmail.com/jahnavi</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SKILLS ─── -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-eyebrow">Skills</div>
+        <h2 class="section-heading">What I work with</h2>
+        <p class="section-sub">
+          Technologies and disciplines I use to build products end-to-end.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon"><i data-lucide="code-2"></i></div>
+            <h3>Frontend Development</h3>
+            <p>HTML, CSS, JavaScript, React, Tailwind CSS, Responsive UI</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i data-lucide="server"></i></div>
+            <h3>Backend Development</h3>
+            <p>
+              Node.js, Express.js, REST APIs,Flask, MongoDB, MySQL, API
+              Integration
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i data-lucide="brain"></i></div>
+            <h3>AI & Data Science</h3>
+            <p>
+              Python, Machine Learning Foundation, Scikit-learn, AI Concepts
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i data-lucide="file-code"></i></div>
+            <h3>Languages</h3>
+            <p>C · C++ · Python · JavaScript· Java · SQL</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i data-lucide="cloud"></i></div>
+            <h3>Tools & Deployment</h3>
+            <p>Git, GitHub, Vercel, Render, Firebase, CI/CD Concepts</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i data-lucide="users"></i></div>
+            <h3>Leadership</h3>
+            <p>Team Leadership, Community Building</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROJECTS ─── -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-eyebrow">Work</div>
+        <h2 class="section-heading">My Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-num">01</span>
+              <div class="project-links">
+                <a
+                  href="https://github.com/MissJahnavi/InfraSense"
+                  title="GitHub"
+                  aria-label="GitHub"
+                >
+                  <i data-lucide="github"></i>
+                </a>
+                <a href="#" title="Live demo" aria-label="Live demo">
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+            <h3>InfraSense</h3>
+            <p>
+              Smart civic infrastructure management platform that allows
+              citizens to report issues with images and location. Uses a
+              MobileNet-based ML model to automatically predict issue severity
+              and help authorities prioritize resolutions.
+            </p>
+            <div class="project-stack">
+              <span>Node.js</span><span>Express.js</span><span>MongoDB</span
+              ><span>React</span><span>Scikit-learn</span
+              ><span>TensorFlow</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-num">02</span>
+              <div class="project-links">
+                <a
+                  href="https://github.com/MissJahnavi/ServEase-Smart-Local-Service-Booking.git"
+                  title="GitHub"
+                  aria-label="GitHub"
+                  ><i data-lucide="github"></i
+                ></a>
+                <a
+                  href="https://serv-ease-smart-local-service-booki.vercel.app/"
+                  title="Live demo"
+                  aria-label="Live demo"
+                  ><i data-lucide="arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+            <h3>ServEase-Smart Local Service Booking</h3>
+            <p>
+              ServEase is a full-stack local service booking platform where
+              users can discover and book verified service providers for various
+              home and professional needs. Built with MERN stack it features service browsing, appointment booking,
+              and a provider dashboard for managing services and availability.
+            </p>
+            <div class="project-stack">
+              <span>MongoDB</span><span>Express.js</span><span>React</span
+              ><span>Node.js</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-num">03</span>
+              <div class="project-links">
+                <a href="#" title="GitHub" aria-label="GitHub"
+                  ><i data-lucide="github"></i
+                ></a>
+                <a href="#" title="Live demo" aria-label="Live demo"
+                  ><i data-lucide="arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+            <h3>Mindease</h3>
+            <p>
+              Mental health support website.
+            </p>
+            <div class="project-stack">
+              <span>HTML</span><span>CSS</span><span>javascript</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-num">04</span>
+              <div class="project-links">
+                <a href="#" title="GitHub" aria-label="GitHub"
+                  ><i data-lucide="github"></i
+                ></a>
+                <a href="#" title="Live demo" aria-label="Live demo"
+                  ><i data-lucide="arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+            <h3>ArogyaSanchay</h3>
+            <p>
+              Digital health record system for migrant workers of Kerala for SIH Hackathon.
+            </p>
+            <div class="project-stack">
+              <span>MERN</span><span>Firebase</span><span>Node.js</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact" class="section-alt">
+      <div class="container">
+        <br />
+        <div class="section-eyebrow">Contact</div>
+        <h2 class="section-heading">Get in touch</h2>
+        <br />
+        <!-- <p class="section-sub">
+          Have a project in mind or want to discuss an opportunity? I'd love to
+          hear from you.
+        </p> -->
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-detail">
+              <i data-lucide="mail"></i>
+              <div>
+                <span class="detail-label">Email</span>
+                <a href="mailto:jahnavi@gdgsdsf.dev" class="detail-val"
+                  >jahnavimishra23@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i data-lucide="map-pin"></i>
+              <div>
+                <span class="detail-label">Location</span>
+                <span class="detail-val">India · Remote Friendly</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i data-lucide="circle-dot"></i>
+              <div>
+                <span class="detail-label">Status</span>
+                <span class="detail-val available">Open to opportunities</span>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://github.com/MissJahnavi"
+                class="social-btn"
+                aria-label="GitHub"
+              >
+                <i data-lucide="github"></i> GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jahnavi-mishra-31b075335"
+                class="social-btn"
+                aria-label="LinkedIn"
+              >
+                <i data-lucide="linkedin"></i> LinkedIn
+              </a>
+              <!-- <a href="#" class="social-btn" aria-label="Twitter">
+                <i data-lucide="twitter"></i> Twitter
+              </a> -->
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <label for="fname">Name</label>
+              <input
+                type="text"
+                id="fname"
+                placeholder="Your name"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-row">
+              <label for="femail">Email</label>
+              <input
+                type="email"
+                id="femail"
+                placeholder="your@email.com"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-row">
+              <label for="fmsg">Message</label>
+              <textarea
+                id="fmsg"
+                rows="5"
+                placeholder="Tell me about your project..."
+              ></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" id="sendBtn">
+              <i data-lucide="send"></i>
+              Send Message
+            </button>
+            <p class="form-success" id="successMsg">
+              <i data-lucide="check-circle"></i> Message sent — I'll get back to
+              you soon.
+            </p>
+          </form>
+        </div>
+      </div>
+      <br />
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="footer-logo">JM</span>
+        <p class="footer-copy">© 2025 Jahnavi Mishra. All rights reserved.</p>
+        <a href="#home" class="footer-top">
+          <i data-lucide="arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
