@@ -72,7 +72,7 @@ function typeLoop() {
     if (charIdx === 0) {
       isDeleting = false;
       phraseIdx  = (phraseIdx + 1) % phrases.length;
-      setTimeout(typeLoop, 350);
+      setTimeout(typeLoop, 500);
       return;
     }
     setTimeout(typeLoop, 35);
