@@ -449,6 +449,9 @@ body::before {
   display: none;
 }
 
+
+
+
 /* ══════════════════════════════════════════════════════
    ABOUT
    ══════════════════════════════════════════════════════ */
@@ -1094,4 +1097,56 @@ a.detail-val:hover { color: var(--accent-h); }
   .hero-stats { flex-wrap: wrap; gap: 20px; }
   .stat-divider { display: none; }
   .tl-header { flex-direction: column; gap: 8px; }
+}
+
+/* HERO LAYOUT FIX */
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px; /* increase spacing */
+}
+
+.hero-content {
+  flex: 1;
+}
+
+/* IMAGE */
+.hero-img {
+  width: clamp(260px, 28vw, 420px);
+  height: clamp(260px, 28vw, 420px);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(99,102,241,0.5);
+  box-shadow: 0 0 80px rgba(99,102,241,0.35);
+}
+
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-flex {
+    flex-direction: column;      /* stack vertically */
+    align-items: center;         /* center everything */
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-img {
+    order: 2;                    /* force image BELOW text */
+    margin-top: 30px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
 }
